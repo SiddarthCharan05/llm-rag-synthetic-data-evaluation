@@ -53,4 +53,66 @@ Answer Generator (Grounded Response)
 ---
 
 ## 📂 Project Structure
+src/
+├ ingestion/
+│ └ build_index.py
+├ retrieval/
+│ └ query_db.py
+├ rag/
+│ └ simple_rag.py
+app/
+└ chat_app.py
+data/
+├ raw_docs/
+└ chroma/
+docs/
+└ rag_ui_demo.png
 
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/YOUR_USERNAME/llm-rag-synthetic-data-evaluation.git
+cd llm-rag-synthetic-data-evaluation
+
+python3 -m venv venv
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+
+▶️ Run Project
+Build Vector Database
+python src/ingestion/build_index.py
+Launch Web App
+python -m streamlit run app/chat_app.py
+
+
+📚 Example Usage
+Ask:
+What is RAG?
+What does this document say?
+🎯 Why This Project
+This project was built to demonstrate:
+Data-centric AI thinking
+LLM grounding to reduce hallucination
+Cost-efficient local LLM infrastructure
+Production-style pipeline design
+🚀 Future Improvements
+Synthetic data generation
+Evaluation metrics (faithfulness, hallucination detection)
+Chat history memory
+Cloud deployment
+👩‍💻 Author
+Charan Siddarth
+
+---
+
+# 🚀 STEP 3 — Push README
+
+```bash
+git add README.md
+git commit -m "Add professional README documentation"
+git push
